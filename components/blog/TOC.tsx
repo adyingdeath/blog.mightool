@@ -14,14 +14,14 @@ interface TocProps {
 function TOC({ toc, title }: TocProps) {
   return (
     <div className="toc-container mb-4">
-      <h1 className="text-lg font-bold mb-4">{title}</h1>
+      <h1 className="mb-4 text-lg font-bold">{title}</h1>
       <nav className="toc-nav">
         {toc.map((item) => (
           <a
             key={item.id}
             href={`#${item.id}`}
             className={`
-              block text-gray-600 hover:text-gray-900 transition-colors
+              block text-gray-600 transition-colors hover:text-gray-900
               ${item.depth > 1 ? 'border-l border-gray-200' : ''}
             `}
             style={{

@@ -3,13 +3,17 @@ title: 'scanimation'
 date: '2024-11-12 23:14'
 draft: false
 summary: "Let's explore the wonders of scanimation together!"
-tags: 
+tags:
   - scanimation
 ---
 
 export const toc = [
   { title: 'What is scanimation?', id: 'what-is-scanimation', depth: 1 },
-  { title: 'Comparison with other animation techniques', id: 'comparison-with-other-animation-techniques', depth: 2 },
+  {
+    title: 'Comparison with other animation techniques',
+    id: 'comparison-with-other-animation-techniques',
+    depth: 2,
+  },
   { title: 'Some examples', id: 'some-examples', depth: 1 },
   { title: 'How does it work?', id: 'how-does-it-work', depth: 1 },
   { title: 'How to make a scanimation?', id: 'how-to-make-a-scanimation', depth: 1 },
@@ -23,9 +27,12 @@ export const toc = [
 
 It is also called **barrier-grid animation**, **picket-fence animation**, **moire animation**.
 
-<div className="text-sm text-gray-500 dark:text-gray-400">Give it a try: If you're reading this on a computer, try pressing and dragging the overlay over the pattern to see the effect.</div>
+<div className="text-sm text-gray-500 dark:text-gray-400">
+  Give it a try: If you're reading this on a computer, try pressing and dragging the overlay over
+  the pattern to see the effect.
+</div>
 
-<div className="max-sm:grid-rows-2 max-sm:grid-cols-1 grid grid-rows-1 grid-cols-2 text-center mt-6">
+<div className="mt-6 grid grid-cols-2 grid-rows-1 text-center max-sm:grid-cols-1 max-sm:grid-rows-2">
   <div className="flex flex-col items-center">
     <img className="m-0 w-48" src="/static/images/scanimation/pattern.png"></img>
     <div>pattern</div>
@@ -40,20 +47,50 @@ The technique dates back to the late 1890s and has been used in various forms, i
 
 ## Comparison with other animation techniques
 
-| Techniques | Advantages           | Limitations          | Typical Applications  |
-|----------------|----------------------|----------------------|-----------------------|
-| Scanimation     | No power required / Low cost | Unidirectional loop / Short frame count | Children's books / Promotional cards |
-| Flip Animation   | Full color / Complex movements | Requires quick page turning | Journals / Art books |
-| E-paper Animation | Programmable / Long content | High cost / Hardware dependent | Digital signage / Museum guides |
-| Holography      | 3D effect            | Requires special light sources | Stage performances / Technology exhibitions |
+| Techniques        | Advantages                     | Limitations                             | Typical Applications                        |
+| ----------------- | ------------------------------ | --------------------------------------- | ------------------------------------------- |
+| Scanimation       | No power required / Low cost   | Unidirectional loop / Short frame count | Children's books / Promotional cards        |
+| Flip Animation    | Full color / Complex movements | Requires quick page turning             | Journals / Art books                        |
+| E-paper Animation | Programmable / Long content    | High cost / Hardware dependent          | Digital signage / Museum guides             |
+| Holography        | 3D effect                      | Requires special light sources          | Stage performances / Technology exhibitions |
 
 # Some examples
 
-<iframe className="w-full aspect-video mb-6" width="560" height="315" src="https://www.youtube.com/embed/1e0J4TrubKw?si=-SQpQobRUToxq_tF" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+<iframe
+  className="mb-6 aspect-video w-full"
+  width="560"
+  height="315"
+  src="https://www.youtube.com/embed/1e0J4TrubKw?si=-SQpQobRUToxq_tF"
+  title="YouTube video player"
+  frameBorder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+  referrerPolicy="strict-origin-when-cross-origin"
+  allowFullScreen
+></iframe>
 
-<iframe className="w-full aspect-video mb-6" width="560" height="315" src="https://www.youtube.com/embed/oQ0d9eyEUro?si=oSwgtExOEJOnkQxK" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+<iframe
+  className="mb-6 aspect-video w-full"
+  width="560"
+  height="315"
+  src="https://www.youtube.com/embed/oQ0d9eyEUro?si=oSwgtExOEJOnkQxK"
+  title="YouTube video player"
+  frameBorder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+  referrerPolicy="strict-origin-when-cross-origin"
+  allowFullScreen
+></iframe>
 
-<iframe className="w-full aspect-video mb-6" width="560" height="315" src="https://www.youtube.com/embed/7pZcyN9EUtQ?si=6Xo91VdjqfAQWP75" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+<iframe
+  className="mb-6 aspect-video w-full"
+  width="560"
+  height="315"
+  src="https://www.youtube.com/embed/7pZcyN9EUtQ?si=6Xo91VdjqfAQWP75"
+  title="YouTube video player"
+  frameBorder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+  referrerPolicy="strict-origin-when-cross-origin"
+  allowFullScreen
+></iframe>
 
 # How does it work?
 
@@ -63,10 +100,15 @@ Due to the presence of opaque stripes on the overlay, when you place the overlay
 
 You can easily create a scanimation using our scanimation generator. Check it here:
 
-<a href="https://www.mightool.com/en/scanimation/" className="flex items-center border border-gray-100 rounded-md p-4 select-none cursor-pointer transition-colors no-underline hover:bg-slate-50">
+<a
+  href="https://www.mightool.com/en/scanimation/"
+  className="flex cursor-pointer select-none items-center rounded-md border border-gray-100 p-4 no-underline transition-colors hover:bg-slate-50"
+>
   <img className="m-4" src="https://www.mightool.com/favicon.ico"></img>
-  <div className="h-full flex-grow flex flex-col">
+  <div className="flex h-full flex-grow flex-col">
     <div>Mightool Scanimation</div>
-    <div className="text-sm text-gray-500 text-ellipsis overflow-hidden">An online tool to make Moire Pattern/scanimation/Animated Optical Illusions/Slit Animation</div>
+    <div className="overflow-hidden text-ellipsis text-sm text-gray-500">
+      An online tool to make Moire Pattern/scanimation/Animated Optical Illusions/Slit Animation
+    </div>
   </div>
 </a>
